@@ -9,6 +9,10 @@ mysql> describe movies;
 +----------+--------------+------+-----+---------+----------------+
 4 rows in set (0.04 sec)
 
+mysql> insert into movies(title, genre, duration)
+    -> values('Metropolis', 'Sci-Fi', 153);
+Query OK, 1 row affected (0.05 sec)
+
 mysql> select * from movies;
 +----+------------+--------+----------+
 | id | title      | genre  | duration |
